@@ -99,10 +99,16 @@ python tools/sim_serial_gateway.py --port 8195 --speed 10 --duration 600 --drone
 python tools/gateway_dashboard.py --port socket://127.0.0.1:8195 --duration 75 --out resultados/dash_sim "--gw-pos=-16.6799,-49.2550"
 ```
 
-O teste `test_compat_with_drones_front` decodifica os quadros de exemplo do pacote `cerise_drones` (repositório da
-frente de drones/segmentação). Ele procura `cerise_drones/protocolo.py` na pasta indicada pela variável de ambiente
-`CERISE_DRONES_DIR` ou, na falta dela, na pasta irmã `DRONES_SEGMENTACAO`; se não encontrar, o teste é pulado
-(*skip*) e os demais 20 continuam valendo. Os testes de validação cruzada recompilam `tools/c/gen_vectors.c` se houver
+O teste `test_compat_with_drones_front` decodifica os quadros de exemplo do pacote `cerise_drones` (repositório
+`cerise-2026-drones-segmentacao`, da frente de drones). Ele procura `cerise_drones/protocolo.py` na pasta indicada
+pela variável de ambiente `CERISE_DRONES_DIR` ou, na falta dela, na pasta irmã `DRONES_SEGMENTACAO`; se não
+encontrar, o teste é pulado (*skip*) e os demais 20 continuam valendo. Exemplo com os dois repositórios clonados
+lado a lado:
+
+```powershell
+$env:CERISE_DRONES_DIR = "..\cerise-2026-drones-segmentacao"
+python -m pytest -v tools/tests
+``` Os testes de validação cruzada recompilam `tools/c/gen_vectors.c` se houver
 `gcc` no PATH; caso contrário, usam `tools/tests/vectors.tsv` versionado.
 
 ### Com as placas (quando adquiridas)
