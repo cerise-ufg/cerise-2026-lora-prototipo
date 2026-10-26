@@ -8,6 +8,7 @@ Inovação em Gêmeos Digitais, Tecnologias Imersivas, Robótica e Navegação A
 - **Autor:** Eduardo Martins de Carvalho Caixeta (bolsista, CERISE/EMC/UFG)
 - **Coordenação:** Prof. Dr. Alisson Assis Cardoso (Navegação Autônoma)
 - **Texto técnico completo:** [`RELATORIO_SECAO.md`](RELATORIO_SECAO.md) (16 figuras em `evidencias/`)
+- **Roteiro de implementação (passo a passo para reproduzir, incluindo bancada e ensaio):** [`ROTEIRO.md`](ROTEIRO.md)
 
 > **Estado (26/10/2026):** firmware compilado para 5 ambientes; protocolo com 30 testes unitários nativos e 21 testes
 > Python (validação cruzada C × Python e compatibilidade com a frente de drones); simulação de canal com 1 130
