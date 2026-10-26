@@ -112,8 +112,12 @@ def test_types_seen_in_vectors():
 
 
 def test_compat_with_drones_front():
-    """Quadros de exemplo da frente de drones (cerise_drones/protocolo.py) decodificam aqui."""
-    drones = ROOT.parent / "DRONES_SEGMENTACAO"
+    """Quadros de exemplo da frente de drones (cerise_drones/protocolo.py) decodificam aqui.
+
+    Procura o pacote cerise_drones na pasta indicada pela variavel de ambiente
+    CERISE_DRONES_DIR ou, na falta dela, na pasta irma DRONES_SEGMENTACAO.
+    """
+    drones = Path(os.environ.get("CERISE_DRONES_DIR", ROOT.parent / "DRONES_SEGMENTACAO"))
     if not (drones / "cerise_drones" / "protocolo.py").exists():
         pytest.skip("frente de drones nao encontrada neste computador")
     import importlib.util
