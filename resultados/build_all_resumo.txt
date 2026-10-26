@@ -1,0 +1,38 @@
+Processing heltec_v3_node (board: heltec_wifi_lora_32_V3; platform: espressif32@6.12.0; framework: arduino)
+--------------------------------------------------------------------------------
+RAM:   [=         ]   6.8% (used 22400 bytes from 327680 bytes)
+Flash: [=         ]  11.3% (used 376241 bytes from 3342336 bytes)
+Successfully created esp32s3 image.
+========================= [SUCCESS] Took 19.98 seconds =========================
+Processing heltec_v3_gateway (board: heltec_wifi_lora_32_V3; platform: espressif32@6.12.0; framework: arduino)
+--------------------------------------------------------------------------------
+RAM:   [=         ]   9.3% (used 30552 bytes from 327680 bytes)
+Flash: [=         ]  10.6% (used 355821 bytes from 3342336 bytes)
+Successfully created esp32s3 image.
+========================= [SUCCESS] Took 20.67 seconds =========================
+Processing ttgo_v21_node (board: ttgo-lora32-v21; platform: espressif32@6.12.0; framework: arduino)
+--------------------------------------------------------------------------------
+RAM:   [=         ]   7.7% (used 25228 bytes from 327680 bytes)
+Flash: [===       ]  28.7% (used 376277 bytes from 1310720 bytes)
+Successfully created esp32 image.
+========================= [SUCCESS] Took 15.81 seconds =========================
+Processing ttgo_v21_gateway (board: ttgo-lora32-v21; platform: espressif32@6.12.0; framework: arduino)
+--------------------------------------------------------------------------------
+RAM:   [=         ]  10.2% (used 33424 bytes from 327680 bytes)
+Flash: [===       ]  27.3% (used 358045 bytes from 1310720 bytes)
+Successfully created esp32 image.
+========================= [SUCCESS] Took 18.24 seconds =========================
+Processing heltec_v3_node_gps (board: heltec_wifi_lora_32_V3; platform: espressif32@6.12.0; framework: arduino)
+--------------------------------------------------------------------------------
+RAM:   [=         ]   6.9% (used 22552 bytes from 327680 bytes)
+Flash: [=         ]  11.3% (used 378489 bytes from 3342336 bytes)
+Successfully created esp32s3 image.
+========================= [SUCCESS] Took 19.46 seconds =========================
+Environment         Status    Duration
+------------------  --------  ------------
+heltec_v3_node      SUCCESS   00:00:19.984
+heltec_v3_gateway   SUCCESS   00:00:20.670
+ttgo_v21_node       SUCCESS   00:00:15.812
+ttgo_v21_gateway    SUCCESS   00:00:18.244
+heltec_v3_node_gps  SUCCESS   00:00:19.461
+========================= 5 succeeded in 00:01:34.171 =========================

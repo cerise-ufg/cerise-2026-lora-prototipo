@@ -1,0 +1,9 @@
+{
+  "name": "cerise_proto",
+  "version": "1.0.0",
+  "description": "Protocolo binario versionado (HEARTBEAT/POS/AREA_ASSIGN/COVERAGE_DONE/COUNT_REPORT/ACK) com CRC16 para o enlace LoRa drone-solo do CERISE",
+  "keywords": "lora, protocol, crc16, drone, telemetry",
+  "license": "MIT",
+  "frameworks": "*",
+  "platforms": "*"
+}

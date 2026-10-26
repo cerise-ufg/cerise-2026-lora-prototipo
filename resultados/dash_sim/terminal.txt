@@ -1,0 +1,6 @@
+# linhas=593 pacotes=432 invalidas=0 rx_err={'PHY': 100}
+drone    rx unicos  dup esper. perd.   PDR% PDRgw% RSSI med RSSI min SNR med tipos
+    1   143    137    6    139     2   98.6   98.6   -106.7     -116    9.15 {'POS': 101, 'COUNT_REPORT': 21, 'HEARTBEAT': 21}
+    2   150    135   15    138     3   97.8   97.8   -122.8     -132   -5.69 {'POS': 112, 'HEARTBEAT': 21, 'COUNT_REPORT': 17}
+    3   139    129   10    136     7   94.8   94.8   -125.0     -132   -7.95 {'POS': 98, 'HEARTBEAT': 21, 'COUNT_REPORT': 20}
+figura: resultados\dash_sim\dashboard.png

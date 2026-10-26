@@ -1,0 +1,160 @@
+{
+  "hipoteses_mA": {
+    "mcu_ativo_rf_off": 40.0,
+    "sx1262_rx": 4.6,
+    "sx1262_tx_14dBm": 45.0,
+    "sx1262_tx_22dBm": 118.0,
+    "oled_ligado": 15.0
+  },
+  "v_sistema": 3.3,
+  "eficiencia_ldo": 0.6599999999999999,
+  "p_drone_ref_W": 200.0,
+  "periodo_POS_s": 5.0,
+  "linhas": [
+    {
+      "SF": 7,
+      "tx": "sx1262_tx_14dBm",
+      "oled": false,
+      "duty_tx_pct": 1.23,
+      "duty_rx_ack_pct": 4.23,
+      "i_media_mA": 45.1,
+      "p_3v3_W": 0.149,
+      "p_entrada_5V_W": 0.225,
+      "fracao_potencia_drone_pct": 0.113,
+      "energia_voo_20min_Wh": 0.075
+    },
+    {
+      "SF": 7,
+      "tx": "sx1262_tx_14dBm",
+      "oled": true,
+      "duty_tx_pct": 1.23,
+      "duty_rx_ack_pct": 4.23,
+      "i_media_mA": 60.1,
+      "p_3v3_W": 0.198,
+      "p_entrada_5V_W": 0.3,
+      "fracao_potencia_drone_pct": 0.15,
+      "energia_voo_20min_Wh": 0.1
+    },
+    {
+      "SF": 7,
+      "tx": "sx1262_tx_22dBm",
+      "oled": false,
+      "duty_tx_pct": 1.23,
+      "duty_rx_ack_pct": 4.23,
+      "i_media_mA": 46.0,
+      "p_3v3_W": 0.152,
+      "p_entrada_5V_W": 0.23,
+      "fracao_potencia_drone_pct": 0.115,
+      "energia_voo_20min_Wh": 0.077
+    },
+    {
+      "SF": 7,
+      "tx": "sx1262_tx_22dBm",
+      "oled": true,
+      "duty_tx_pct": 1.23,
+      "duty_rx_ack_pct": 4.23,
+      "i_media_mA": 61.0,
+      "p_3v3_W": 0.201,
+      "p_entrada_5V_W": 0.305,
+      "fracao_potencia_drone_pct": 0.152,
+      "energia_voo_20min_Wh": 0.102
+    },
+    {
+      "SF": 9,
+      "tx": "sx1262_tx_14dBm",
+      "oled": false,
+      "duty_tx_pct": 4.12,
+      "duty_rx_ack_pct": 6.5,
+      "i_media_mA": 46.3,
+      "p_3v3_W": 0.153,
+      "p_entrada_5V_W": 0.231,
+      "fracao_potencia_drone_pct": 0.116,
+      "energia_voo_20min_Wh": 0.077
+    },
+    {
+      "SF": 9,
+      "tx": "sx1262_tx_14dBm",
+      "oled": true,
+      "duty_tx_pct": 4.12,
+      "duty_rx_ack_pct": 6.5,
+      "i_media_mA": 61.3,
+      "p_3v3_W": 0.202,
+      "p_entrada_5V_W": 0.306,
+      "fracao_potencia_drone_pct": 0.153,
+      "energia_voo_20min_Wh": 0.102
+    },
+    {
+      "SF": 9,
+      "tx": "sx1262_tx_22dBm",
+      "oled": false,
+      "duty_tx_pct": 4.12,
+      "duty_rx_ack_pct": 6.5,
+      "i_media_mA": 49.3,
+      "p_3v3_W": 0.163,
+      "p_entrada_5V_W": 0.246,
+      "fracao_potencia_drone_pct": 0.123,
+      "energia_voo_20min_Wh": 0.082
+    },
+    {
+      "SF": 9,
+      "tx": "sx1262_tx_22dBm",
+      "oled": true,
+      "duty_tx_pct": 4.12,
+      "duty_rx_ack_pct": 6.5,
+      "i_media_mA": 64.3,
+      "p_3v3_W": 0.212,
+      "p_entrada_5V_W": 0.321,
+      "fracao_potencia_drone_pct": 0.161,
+      "energia_voo_20min_Wh": 0.107
+    },
+    {
+      "SF": 10,
+      "tx": "sx1262_tx_14dBm",
+      "oled": false,
+      "duty_tx_pct": 7.41,
+      "duty_rx_ack_pct": 9.79,
+      "i_media_mA": 47.6,
+      "p_3v3_W": 0.157,
+      "p_entrada_5V_W": 0.238,
+      "fracao_potencia_drone_pct": 0.119,
+      "energia_voo_20min_Wh": 0.079
+    },
+    {
+      "SF": 10,
+      "tx": "sx1262_tx_14dBm",
+      "oled": true,
+      "duty_tx_pct": 7.41,
+      "duty_rx_ack_pct": 9.79,
+      "i_media_mA": 62.6,
+      "p_3v3_W": 0.207,
+      "p_entrada_5V_W": 0.313,
+      "fracao_potencia_drone_pct": 0.156,
+      "energia_voo_20min_Wh": 0.104
+    },
+    {
+      "SF": 10,
+      "tx": "sx1262_tx_22dBm",
+      "oled": false,
+      "duty_tx_pct": 7.41,
+      "duty_rx_ack_pct": 9.79,
+      "i_media_mA": 53.0,
+      "p_3v3_W": 0.175,
+      "p_entrada_5V_W": 0.265,
+      "fracao_potencia_drone_pct": 0.133,
+      "energia_voo_20min_Wh": 0.088
+    },
+    {
+      "SF": 10,
+      "tx": "sx1262_tx_22dBm",
+      "oled": true,
+      "duty_tx_pct": 7.41,
+      "duty_rx_ack_pct": 9.79,
+      "i_media_mA": 68.0,
+      "p_3v3_W": 0.224,
+      "p_entrada_5V_W": 0.34,
+      "fracao_potencia_drone_pct": 0.17,
+      "energia_voo_20min_Wh": 0.113
+    }
+  ],
+  "aviso": "estimativa com correntes tipicas/hipoteses; medir no prototipo"
+}

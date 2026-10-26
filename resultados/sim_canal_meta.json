@@ -1,0 +1,12 @@
+{
+  "seeds": 5,
+  "dur_s": 1800.0,
+  "period_s": 5.0,
+  "jitter": 0.1,
+  "retries": 3,
+  "up_frame_B": 24,
+  "ack_frame_B": 16,
+  "bw_hz": 125000,
+  "cr": "4/5",
+  "runs": 1130
+}

@@ -1,0 +1,15 @@
+item,qtd,componente,especificacao,uso,observacao
+1,2,Heltec WiFi LoRa 32 V3 (versao 863-928 MHz),"ESP32-S3FN8 + SX1262 (TCXO), OLED 0,96 pol., USB-C, carregador LiPo",node (drone) + gateway (solo),placa principal do prototipo; +1 unidade de reserva recomendada
+2,1,LILYGO TTGO LoRa32 v2.1 (T3 1.6.1) 915 MHz,"ESP32-PICO-D4 + SX1276, OLED 0,96 pol.",alternativa / interoperabilidade SX1276-SX1262,opcional; firmware ja compila (ttgo_v21_*)
+3,1,Antena omnidirecional 915 MHz,"3 dBi, conector SMA macho, polarizacao vertical",gateway (estacao de solo),ganho <= 6 dBi (ANATEL Ato 14448 item 10.5) para nao exigir reducao de potencia
+4,1,Antena dipolo 1/2 onda 915 MHz,"2 dBi, SMA, flexivel/articulada",node no drone,montar vertical para baixo
+5,2,Pigtail U.FL (IPEX1) para SMA femea de painel,"cabo 1,13 mm, 10-15 cm",ligacao placa -> antena no gabinete,perda tipica < 0,5 dB
+6,2,Bateria LiPo 1S,"3,7 V 1000-2000 mAh, conector JST 1,25 mm 2 vias (polaridade conferida)",node em bancada/campo sem drone,a Heltec V3 carrega pela USB-C
+7,2,Cabo USB-C de dados,1 m,gravacao do firmware e serial do gateway,
+8,1,Modulo GPS serial (opcional),"u-blox NEO-6M ou NEO-M8N, 3,3 V, UART 9600 bps",geolocalizar cada pacote no teste de alcance (env heltec_v3_node_gps),GPIO47 (RX) / GPIO48 (TX)
+9,1,Tripe/mastro para a antena do gateway,2 a 3 m de altura,teste de alcance,altura da antena de solo entra no modelo de enlace (hm = 2 m)
+10,1,Medidor de energia USB (opcional),"tensao/corrente/mAh, resolucao <= 1 mA",medir consumo real do modulo (substitui a estimativa do orcamento de energia),
+11,15 g,Filamento PETG,impressao 3D do gabinete (base + tampa),gabinete do modulo,massa solida estimada 12,9 g (resultados/gabinete.json)
+12,1 kit,Parafusos M3x8 + porcas / abracadeiras 2,5 mm,,fixacao do gabinete no frame,
+13,1,BEC 5 V / 2 A (modulo definitivo),"entrada 2S-6S, saida 5 V, baixo ripple",alimentacao do modulo no drone,ou derivacao 5 V da PDB do frame
+14,1,Conector JST-GH 4 vias + cabo silicone 26 AWG,"5 V, GND, TX, RX",modulo definitivo <-> computador de bordo,UART 3,3 V TTL 115200 8N1 (GPIO47/48)

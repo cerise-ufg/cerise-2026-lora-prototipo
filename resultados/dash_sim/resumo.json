@@ -1,0 +1,92 @@
+{
+  "label": null,
+  "linhas": 593,
+  "linhas_invalidas": 0,
+  "pacotes": 432,
+  "eventos": {
+    "boot": 1,
+    "stats": 60,
+    "rx_err": 100
+  },
+  "rx_err": {
+    "PHY": 100
+  },
+  "boot": {
+    "evt": "boot",
+    "role": "gateway",
+    "fw": "1.0.0-sim",
+    "board": "simulado",
+    "radio": "SX1262",
+    "rc": 0,
+    "freq_mhz": 916.8,
+    "sf": 9,
+    "bw_khz": 125.0,
+    "cr": "4/5",
+    "tx_dbm": 14,
+    "proto": 1,
+    "net": 42,
+    "_rx_wall": 1792992404.263
+  },
+  "nos": {
+    "1": {
+      "rx": 143,
+      "uniq": 137,
+      "dup": 6,
+      "esperado": 139,
+      "perdidos": 2,
+      "pdr": 0.9856,
+      "pdr_gateway": 0.9856,
+      "rssi_med": -106.7,
+      "rssi_min": -116,
+      "rssi_max": -95,
+      "snr_med": 9.15,
+      "snr_min": 0.0,
+      "tipos": {
+        "POS": 101,
+        "COUNT_REPORT": 21,
+        "HEARTBEAT": 21
+      },
+      "duracao_s": 597.6
+    },
+    "2": {
+      "rx": 150,
+      "uniq": 135,
+      "dup": 15,
+      "esperado": 138,
+      "perdidos": 3,
+      "pdr": 0.9783,
+      "pdr_gateway": 0.9783,
+      "rssi_med": -122.8,
+      "rssi_min": -132,
+      "rssi_max": -113,
+      "snr_med": -5.69,
+      "snr_min": -13.5,
+      "tipos": {
+        "POS": 112,
+        "HEARTBEAT": 21,
+        "COUNT_REPORT": 17
+      },
+      "duracao_s": 591.7
+    },
+    "3": {
+      "rx": 139,
+      "uniq": 129,
+      "dup": 10,
+      "esperado": 136,
+      "perdidos": 7,
+      "pdr": 0.9485,
+      "pdr_gateway": 0.9485,
+      "rssi_med": -125.0,
+      "rssi_min": -132,
+      "rssi_max": -119,
+      "snr_med": -7.95,
+      "snr_min": -14.75,
+      "tipos": {
+        "POS": 98,
+        "HEARTBEAT": 21,
+        "COUNT_REPORT": 20
+      },
+      "duracao_s": 593.6
+    }
+  }
+}

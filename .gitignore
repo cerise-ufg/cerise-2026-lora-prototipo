@@ -1,0 +1,18 @@
+# PlatformIO
+firmware/.pio/
+firmware/.vscode/
+.pio/
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+
+# capturas de campo grandes / brutas (versionar apenas resumos)
+resultados/campo/**/brutos.jsonl
+
+# sistema
+Thumbs.db
+.DS_Store

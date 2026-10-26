@@ -1,0 +1,712 @@
+{
+  "f_mhz": 916.8,
+  "bw_hz": 125000,
+  "cr": "4/5",
+  "preamble": 8,
+  "link": {
+    "gt_dbi": 2.0,
+    "gr_dbi": 3.0,
+    "cable_db": 1.5,
+    "fade_db": 10.0,
+    "hm_m": 2.0
+  },
+  "ptx_dbm": 14.0,
+  "alt_m": 60.0,
+  "airtime_ms": [
+    {
+      "mensagem": "HEARTBEAT",
+      "quadro_B": 18,
+      "SF7_ms": 51.5,
+      "SF8_ms": 92.7,
+      "SF9_ms": 185.3,
+      "SF10_ms": 329.7,
+      "SF11_ms": 659.5,
+      "SF12_ms": 1318.9
+    },
+    {
+      "mensagem": "POS",
+      "quadro_B": 24,
+      "SF7_ms": 61.7,
+      "SF8_ms": 113.2,
+      "SF9_ms": 205.8,
+      "SF10_ms": 370.7,
+      "SF11_ms": 823.3,
+      "SF12_ms": 1482.8
+    },
+    {
+      "mensagem": "AREA_ASSIGN",
+      "quadro_B": 32,
+      "SF7_ms": 71.9,
+      "SF8_ms": 133.6,
+      "SF9_ms": 246.8,
+      "SF10_ms": 452.6,
+      "SF11_ms": 987.1,
+      "SF12_ms": 1810.4
+    },
+    {
+      "mensagem": "COVERAGE_DONE",
+      "quadro_B": 17,
+      "SF7_ms": 51.5,
+      "SF8_ms": 92.7,
+      "SF9_ms": 164.9,
+      "SF10_ms": 329.7,
+      "SF11_ms": 659.5,
+      "SF12_ms": 1318.9
+    },
+    {
+      "mensagem": "COUNT_REPORT",
+      "quadro_B": 23,
+      "SF7_ms": 61.7,
+      "SF8_ms": 113.2,
+      "SF9_ms": 205.8,
+      "SF10_ms": 370.7,
+      "SF11_ms": 823.3,
+      "SF12_ms": 1482.8
+    },
+    {
+      "mensagem": "ACK",
+      "quadro_B": 16,
+      "SF7_ms": 51.5,
+      "SF8_ms": 92.7,
+      "SF9_ms": 164.9,
+      "SF10_ms": 329.7,
+      "SF11_ms": 659.5,
+      "SF12_ms": 1318.9
+    }
+  ],
+  "por_sf": [
+    {
+      "SF": 7,
+      "taxa_bps": 5468.8,
+      "sens_dBm": -124.5,
+      "snr_lim_dB": -7.5,
+      "toa_POS_ms": 61.7,
+      "max_quadro_400ms_B": 255,
+      "POS_cabe_400ms": true,
+      "ocupacao_POS_5s_pct": 1.23
+    },
+    {
+      "SF": 8,
+      "taxa_bps": 3125.0,
+      "sens_dBm": -127.0,
+      "snr_lim_dB": -10.0,
+      "toa_POS_ms": 113.2,
+      "max_quadro_400ms_B": 138,
+      "POS_cabe_400ms": true,
+      "ocupacao_POS_5s_pct": 2.26
+    },
+    {
+      "SF": 9,
+      "taxa_bps": 1757.8,
+      "sens_dBm": -129.5,
+      "snr_lim_dB": -12.5,
+      "toa_POS_ms": 205.8,
+      "max_quadro_400ms_B": 66,
+      "POS_cabe_400ms": true,
+      "ocupacao_POS_5s_pct": 4.12
+    },
+    {
+      "SF": 10,
+      "taxa_bps": 976.6,
+      "sens_dBm": -132.0,
+      "snr_lim_dB": -15.0,
+      "toa_POS_ms": 370.7,
+      "max_quadro_400ms_B": 24,
+      "POS_cabe_400ms": true,
+      "ocupacao_POS_5s_pct": 7.41
+    },
+    {
+      "SF": 11,
+      "taxa_bps": 537.1,
+      "sens_dBm": -134.5,
+      "snr_lim_dB": -17.5,
+      "toa_POS_ms": 823.3,
+      "max_quadro_400ms_B": 0,
+      "POS_cabe_400ms": false,
+      "ocupacao_POS_5s_pct": 16.47
+    },
+    {
+      "SF": 12,
+      "taxa_bps": 293.0,
+      "sens_dBm": -137.0,
+      "snr_lim_dB": -20.0,
+      "toa_POS_ms": 1482.8,
+      "max_quadro_400ms_B": -1,
+      "POS_cabe_400ms": false,
+      "ocupacao_POS_5s_pct": 29.66
+    }
+  ],
+  "enlace": [
+    {
+      "ptx_dBm": 14.0,
+      "SF": 7,
+      "sens_dBm": -124.5,
+      "MAPL_dB": 132.0,
+      "d_espaco_livre_km": 104.1,
+      "d_logdist_n2.7_km": 5.21,
+      "d_logdist_n3.5_km": 0.74,
+      "d_hata_aberto_km": 15.35,
+      "d_hata_suburbano_km": 4.24,
+      "d_hata_urbano_km": 2.12
+    },
+    {
+      "ptx_dBm": 14.0,
+      "SF": 8,
+      "sens_dBm": -127.0,
+      "MAPL_dB": 134.5,
+      "d_espaco_livre_km": 138.8,
+      "d_logdist_n2.7_km": 6.44,
+      "d_logdist_n3.5_km": 0.87,
+      "d_hata_aberto_km": 18.25,
+      "d_hata_suburbano_km": 5.04,
+      "d_hata_urbano_km": 2.52
+    },
+    {
+      "ptx_dBm": 14.0,
+      "SF": 9,
+      "sens_dBm": -129.5,
+      "MAPL_dB": 137.0,
+      "d_espaco_livre_km": 185.0,
+      "d_logdist_n2.7_km": 7.97,
+      "d_logdist_n3.5_km": 1.02,
+      "d_hata_aberto_km": 21.7,
+      "d_hata_suburbano_km": 5.99,
+      "d_hata_urbano_km": 3.0
+    },
+    {
+      "ptx_dBm": 14.0,
+      "SF": 10,
+      "sens_dBm": -132.0,
+      "MAPL_dB": 139.5,
+      "d_espaco_livre_km": 246.8,
+      "d_logdist_n2.7_km": 9.87,
+      "d_logdist_n3.5_km": 1.21,
+      "d_hata_aberto_km": 25.81,
+      "d_hata_suburbano_km": 7.12,
+      "d_hata_urbano_km": 3.57
+    },
+    {
+      "ptx_dBm": 14.0,
+      "SF": 11,
+      "sens_dBm": -134.5,
+      "MAPL_dB": 142.0,
+      "d_espaco_livre_km": 329.1,
+      "d_logdist_n2.7_km": 12.21,
+      "d_logdist_n3.5_km": 1.42,
+      "d_hata_aberto_km": 30.68,
+      "d_hata_suburbano_km": 8.47,
+      "d_hata_urbano_km": 4.24
+    },
+    {
+      "ptx_dBm": 14.0,
+      "SF": 12,
+      "sens_dBm": -137.0,
+      "MAPL_dB": 144.5,
+      "d_espaco_livre_km": 438.8,
+      "d_logdist_n2.7_km": 15.12,
+      "d_logdist_n3.5_km": 1.68,
+      "d_hata_aberto_km": 36.48,
+      "d_hata_suburbano_km": 10.07,
+      "d_hata_urbano_km": 5.04
+    },
+    {
+      "ptx_dBm": 22.0,
+      "SF": 7,
+      "sens_dBm": -124.5,
+      "MAPL_dB": 140.0,
+      "d_espaco_livre_km": 261.4,
+      "d_logdist_n2.7_km": 10.3,
+      "d_logdist_n3.5_km": 1.25,
+      "d_hata_aberto_km": 26.72,
+      "d_hata_suburbano_km": 7.37,
+      "d_hata_urbano_km": 3.69
+    },
+    {
+      "ptx_dBm": 22.0,
+      "SF": 8,
+      "sens_dBm": -127.0,
+      "MAPL_dB": 142.5,
+      "d_espaco_livre_km": 348.6,
+      "d_logdist_n2.7_km": 12.75,
+      "d_logdist_n3.5_km": 1.47,
+      "d_hata_aberto_km": 31.76,
+      "d_hata_suburbano_km": 8.76,
+      "d_hata_urbano_km": 4.39
+    },
+    {
+      "ptx_dBm": 22.0,
+      "SF": 9,
+      "sens_dBm": -129.5,
+      "MAPL_dB": 145.0,
+      "d_espaco_livre_km": 464.8,
+      "d_logdist_n2.7_km": 15.78,
+      "d_logdist_n3.5_km": 1.73,
+      "d_hata_aberto_km": 37.77,
+      "d_hata_suburbano_km": 10.42,
+      "d_hata_urbano_km": 5.22
+    },
+    {
+      "ptx_dBm": 22.0,
+      "SF": 10,
+      "sens_dBm": -132.0,
+      "MAPL_dB": 147.5,
+      "d_espaco_livre_km": 619.8,
+      "d_logdist_n2.7_km": 19.52,
+      "d_logdist_n3.5_km": 2.04,
+      "d_hata_aberto_km": 44.91,
+      "d_hata_suburbano_km": 12.39,
+      "d_hata_urbano_km": 6.2
+    },
+    {
+      "ptx_dBm": 22.0,
+      "SF": 11,
+      "sens_dBm": -134.5,
+      "MAPL_dB": 150.0,
+      "d_espaco_livre_km": 826.6,
+      "d_logdist_n2.7_km": 24.16,
+      "d_logdist_n3.5_km": 2.41,
+      "d_hata_aberto_km": 53.39,
+      "d_hata_suburbano_km": 14.73,
+      "d_hata_urbano_km": 7.38
+    },
+    {
+      "ptx_dBm": 22.0,
+      "SF": 12,
+      "sens_dBm": -137.0,
+      "MAPL_dB": 152.5,
+      "d_espaco_livre_km": 1102.2,
+      "d_logdist_n2.7_km": 29.91,
+      "d_logdist_n3.5_km": 2.84,
+      "d_hata_aberto_km": 63.48,
+      "d_hata_suburbano_km": 17.52,
+      "d_hata_urbano_km": 8.77
+    }
+  ],
+  "horizonte_radio_km": 37.7,
+  "fresnel_meio_m": {
+    "1km": 9.0,
+    "2km": 12.8,
+    "5km": 20.2,
+    "10km": 28.6
+  },
+  "alcance_altitude": [
+    {
+      "SF": 7,
+      "alt_m": 30,
+      "d_hata_suburbano_km": 2.98
+    },
+    {
+      "SF": 7,
+      "alt_m": 35,
+      "d_hata_suburbano_km": 3.21
+    },
+    {
+      "SF": 7,
+      "alt_m": 40,
+      "d_hata_suburbano_km": 3.43
+    },
+    {
+      "SF": 7,
+      "alt_m": 45,
+      "d_hata_suburbano_km": 3.64
+    },
+    {
+      "SF": 7,
+      "alt_m": 50,
+      "d_hata_suburbano_km": 3.85
+    },
+    {
+      "SF": 7,
+      "alt_m": 55,
+      "d_hata_suburbano_km": 4.04
+    },
+    {
+      "SF": 7,
+      "alt_m": 60,
+      "d_hata_suburbano_km": 4.24
+    },
+    {
+      "SF": 7,
+      "alt_m": 65,
+      "d_hata_suburbano_km": 4.42
+    },
+    {
+      "SF": 7,
+      "alt_m": 70,
+      "d_hata_suburbano_km": 4.61
+    },
+    {
+      "SF": 7,
+      "alt_m": 75,
+      "d_hata_suburbano_km": 4.79
+    },
+    {
+      "SF": 7,
+      "alt_m": 80,
+      "d_hata_suburbano_km": 4.97
+    },
+    {
+      "SF": 7,
+      "alt_m": 85,
+      "d_hata_suburbano_km": 5.14
+    },
+    {
+      "SF": 7,
+      "alt_m": 90,
+      "d_hata_suburbano_km": 5.31
+    },
+    {
+      "SF": 7,
+      "alt_m": 95,
+      "d_hata_suburbano_km": 5.48
+    },
+    {
+      "SF": 7,
+      "alt_m": 100,
+      "d_hata_suburbano_km": 5.65
+    },
+    {
+      "SF": 7,
+      "alt_m": 105,
+      "d_hata_suburbano_km": 5.82
+    },
+    {
+      "SF": 7,
+      "alt_m": 110,
+      "d_hata_suburbano_km": 5.98
+    },
+    {
+      "SF": 7,
+      "alt_m": 115,
+      "d_hata_suburbano_km": 6.14
+    },
+    {
+      "SF": 7,
+      "alt_m": 120,
+      "d_hata_suburbano_km": 6.3
+    },
+    {
+      "SF": 9,
+      "alt_m": 30,
+      "d_hata_suburbano_km": 4.13
+    },
+    {
+      "SF": 9,
+      "alt_m": 35,
+      "d_hata_suburbano_km": 4.47
+    },
+    {
+      "SF": 9,
+      "alt_m": 40,
+      "d_hata_suburbano_km": 4.79
+    },
+    {
+      "SF": 9,
+      "alt_m": 45,
+      "d_hata_suburbano_km": 5.1
+    },
+    {
+      "SF": 9,
+      "alt_m": 50,
+      "d_hata_suburbano_km": 5.41
+    },
+    {
+      "SF": 9,
+      "alt_m": 55,
+      "d_hata_suburbano_km": 5.7
+    },
+    {
+      "SF": 9,
+      "alt_m": 60,
+      "d_hata_suburbano_km": 5.99
+    },
+    {
+      "SF": 9,
+      "alt_m": 65,
+      "d_hata_suburbano_km": 6.27
+    },
+    {
+      "SF": 9,
+      "alt_m": 70,
+      "d_hata_suburbano_km": 6.55
+    },
+    {
+      "SF": 9,
+      "alt_m": 75,
+      "d_hata_suburbano_km": 6.82
+    },
+    {
+      "SF": 9,
+      "alt_m": 80,
+      "d_hata_suburbano_km": 7.08
+    },
+    {
+      "SF": 9,
+      "alt_m": 85,
+      "d_hata_suburbano_km": 7.35
+    },
+    {
+      "SF": 9,
+      "alt_m": 90,
+      "d_hata_suburbano_km": 7.6
+    },
+    {
+      "SF": 9,
+      "alt_m": 95,
+      "d_hata_suburbano_km": 7.86
+    },
+    {
+      "SF": 9,
+      "alt_m": 100,
+      "d_hata_suburbano_km": 8.11
+    },
+    {
+      "SF": 9,
+      "alt_m": 105,
+      "d_hata_suburbano_km": 8.37
+    },
+    {
+      "SF": 9,
+      "alt_m": 110,
+      "d_hata_suburbano_km": 8.61
+    },
+    {
+      "SF": 9,
+      "alt_m": 115,
+      "d_hata_suburbano_km": 8.86
+    },
+    {
+      "SF": 9,
+      "alt_m": 120,
+      "d_hata_suburbano_km": 9.11
+    },
+    {
+      "SF": 10,
+      "alt_m": 30,
+      "d_hata_suburbano_km": 4.86
+    },
+    {
+      "SF": 10,
+      "alt_m": 35,
+      "d_hata_suburbano_km": 5.27
+    },
+    {
+      "SF": 10,
+      "alt_m": 40,
+      "d_hata_suburbano_km": 5.67
+    },
+    {
+      "SF": 10,
+      "alt_m": 45,
+      "d_hata_suburbano_km": 6.04
+    },
+    {
+      "SF": 10,
+      "alt_m": 50,
+      "d_hata_suburbano_km": 6.41
+    },
+    {
+      "SF": 10,
+      "alt_m": 55,
+      "d_hata_suburbano_km": 6.77
+    },
+    {
+      "SF": 10,
+      "alt_m": 60,
+      "d_hata_suburbano_km": 7.12
+    },
+    {
+      "SF": 10,
+      "alt_m": 65,
+      "d_hata_suburbano_km": 7.46
+    },
+    {
+      "SF": 10,
+      "alt_m": 70,
+      "d_hata_suburbano_km": 7.8
+    },
+    {
+      "SF": 10,
+      "alt_m": 75,
+      "d_hata_suburbano_km": 8.13
+    },
+    {
+      "SF": 10,
+      "alt_m": 80,
+      "d_hata_suburbano_km": 8.46
+    },
+    {
+      "SF": 10,
+      "alt_m": 85,
+      "d_hata_suburbano_km": 8.78
+    },
+    {
+      "SF": 10,
+      "alt_m": 90,
+      "d_hata_suburbano_km": 9.1
+    },
+    {
+      "SF": 10,
+      "alt_m": 95,
+      "d_hata_suburbano_km": 9.41
+    },
+    {
+      "SF": 10,
+      "alt_m": 100,
+      "d_hata_suburbano_km": 9.72
+    },
+    {
+      "SF": 10,
+      "alt_m": 105,
+      "d_hata_suburbano_km": 10.03
+    },
+    {
+      "SF": 10,
+      "alt_m": 110,
+      "d_hata_suburbano_km": 10.34
+    },
+    {
+      "SF": 10,
+      "alt_m": 115,
+      "d_hata_suburbano_km": 10.64
+    },
+    {
+      "SF": 10,
+      "alt_m": 120,
+      "d_hata_suburbano_km": 10.95
+    },
+    {
+      "SF": 12,
+      "alt_m": 30,
+      "d_hata_suburbano_km": 6.74
+    },
+    {
+      "SF": 12,
+      "alt_m": 35,
+      "d_hata_suburbano_km": 7.34
+    },
+    {
+      "SF": 12,
+      "alt_m": 40,
+      "d_hata_suburbano_km": 7.92
+    },
+    {
+      "SF": 12,
+      "alt_m": 45,
+      "d_hata_suburbano_km": 8.47
+    },
+    {
+      "SF": 12,
+      "alt_m": 50,
+      "d_hata_suburbano_km": 9.02
+    },
+    {
+      "SF": 12,
+      "alt_m": 55,
+      "d_hata_suburbano_km": 9.55
+    },
+    {
+      "SF": 12,
+      "alt_m": 60,
+      "d_hata_suburbano_km": 10.07
+    },
+    {
+      "SF": 12,
+      "alt_m": 65,
+      "d_hata_suburbano_km": 10.58
+    },
+    {
+      "SF": 12,
+      "alt_m": 70,
+      "d_hata_suburbano_km": 11.08
+    },
+    {
+      "SF": 12,
+      "alt_m": 75,
+      "d_hata_suburbano_km": 11.57
+    },
+    {
+      "SF": 12,
+      "alt_m": 80,
+      "d_hata_suburbano_km": 12.06
+    },
+    {
+      "SF": 12,
+      "alt_m": 85,
+      "d_hata_suburbano_km": 12.55
+    },
+    {
+      "SF": 12,
+      "alt_m": 90,
+      "d_hata_suburbano_km": 13.02
+    },
+    {
+      "SF": 12,
+      "alt_m": 95,
+      "d_hata_suburbano_km": 13.5
+    },
+    {
+      "SF": 12,
+      "alt_m": 100,
+      "d_hata_suburbano_km": 13.97
+    },
+    {
+      "SF": 12,
+      "alt_m": 105,
+      "d_hata_suburbano_km": 14.43
+    },
+    {
+      "SF": 12,
+      "alt_m": 110,
+      "d_hata_suburbano_km": 14.9
+    },
+    {
+      "SF": 12,
+      "alt_m": 115,
+      "d_hata_suburbano_km": 15.36
+    },
+    {
+      "SF": 12,
+      "alt_m": 120,
+      "d_hata_suburbano_km": 15.82
+    }
+  ],
+  "energia_pos": [
+    {
+      "SF": 7,
+      "toa_POS_ms": 61.7,
+      "carga_POS_14dBm_uAh": 0.77,
+      "carga_POS_22dBm_uAh": 2.02
+    },
+    {
+      "SF": 8,
+      "toa_POS_ms": 113.2,
+      "carga_POS_14dBm_uAh": 1.41,
+      "carga_POS_22dBm_uAh": 3.71
+    },
+    {
+      "SF": 9,
+      "toa_POS_ms": 205.8,
+      "carga_POS_14dBm_uAh": 2.57,
+      "carga_POS_22dBm_uAh": 6.75
+    },
+    {
+      "SF": 10,
+      "toa_POS_ms": 370.7,
+      "carga_POS_14dBm_uAh": 4.63,
+      "carga_POS_22dBm_uAh": 12.15
+    },
+    {
+      "SF": 11,
+      "toa_POS_ms": 823.3,
+      "carga_POS_14dBm_uAh": 10.29,
+      "carga_POS_22dBm_uAh": 26.99
+    },
+    {
+      "SF": 12,
+      "toa_POS_ms": 1482.8,
+      "carga_POS_14dBm_uAh": 18.53,
+      "carga_POS_22dBm_uAh": 48.6
+    }
+  ]
+}

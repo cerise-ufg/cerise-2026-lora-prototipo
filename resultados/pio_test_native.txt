@@ -1,0 +1,55 @@
+Collected 1 tests (test_proto)
+
+Processing test_proto in native environment
+--------------------------------------------------------------------------------
+Building...
+
+
+Testing...
+test\test_proto\test_proto.c:496:test_crc16_check_value:PASS
+test\test_proto\test_proto.c:497:test_crc16_empty:PASS
+test\test_proto\test_proto.c:498:test_payload_and_frame_lengths:PASS
+test\test_proto\test_proto.c:499:test_pos_golden_vector_encode:PASS
+test\test_proto\test_proto.c:500:test_pos_golden_vector_decode:PASS
+test\test_proto\test_proto.c:501:test_roundtrip_heartbeat:PASS
+test\test_proto\test_proto.c:502:test_roundtrip_pos:PASS
+test\test_proto\test_proto.c:503:test_roundtrip_area_assign:PASS
+test\test_proto\test_proto.c:504:test_roundtrip_coverage_done:PASS
+test\test_proto\test_proto.c:505:test_roundtrip_count_report:PASS
+test\test_proto\test_proto.c:506:test_roundtrip_ack:PASS
+test\test_proto\test_proto.c:507:test_extreme_coordinates:PASS
+test\test_proto\test_proto.c:508:test_detects_all_single_bit_flips:PASS
+test\test_proto\test_proto.c:509:test_detects_all_double_bit_flips:PASS
+test\test_proto\test_proto.c:510:test_detects_bursts_up_to_16_bits:PASS
+test\test_proto\test_proto.c:511:test_decode_rejects_short_and_long:PASS
+test\test_proto\test_proto.c:512:test_decode_rejects_bad_version:PASS
+test\test_proto\test_proto.c:513:test_decode_rejects_unknown_type:PASS
+test\test_proto\test_proto.c:514:test_decode_rejects_len_mismatch:PASS
+test\test_proto\test_proto.c:515:test_encode_rejects_invalid_args:PASS
+test\test_proto\test_proto.c:516:test_make_ack:PASS
+test\test_proto\test_proto.c:517:test_dedup:PASS
+test\test_proto\test_proto.c:518:test_airtime_reference_values:PASS
+test\test_proto\test_proto.c:519:test_au915_channel_plan:PASS
+test\test_proto\test_proto.c:520:test_lipo_pct:PASS
+test\test_proto\test_proto.c:521:test_json_pos:PASS
+test\test_proto\test_proto.c:522:test_json_ack_negative_snr_and_overflow:PASS
+test\test_proto\test_proto.c:523:test_extension_types_roundtrip:PASS
+test\test_proto\test_proto.c:524:test_area_poly_rejects_too_many_vertices:PASS
+test\test_proto\test_proto.c:525:test_json_extension:PASS
+
+-----------------------
+30 Tests 0 Failures 0 Ignored 
+OK
+
+----------------- native:test_proto [PASSED] Took 3.11 seconds -----------------
+
+=================================== SUMMARY ===================================
+Environment         Test        Status    Duration
+------------------  ----------  --------  ------------
+heltec_v3_node      test_proto  SKIPPED
+heltec_v3_gateway   test_proto  SKIPPED
+ttgo_v21_node       test_proto  SKIPPED
+ttgo_v21_gateway    test_proto  SKIPPED
+heltec_v3_node_gps  test_proto  SKIPPED
+native              test_proto  PASSED    00:00:03.105
+================= 30 test cases: 30 succeeded in 00:00:03.105 =================

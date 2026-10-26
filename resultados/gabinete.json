@@ -1,0 +1,41 @@
+{
+  "parametros": {
+    "pcb_l": 50.2,
+    "pcb_w": 25.5,
+    "pcb_t": 1.6,
+    "comp_h": 8.6,
+    "under": 3.0,
+    "top_gap": 0.8,
+    "clear": 0.6,
+    "wall": 1.8,
+    "floor": 1.6,
+    "lid_t": 1.6,
+    "fit": 0.25,
+    "sma_d": 6.6,
+    "oled_w": 24.0,
+    "oled_h": 13.0,
+    "oled_dx": 4.0,
+    "density": 1.27
+  },
+  "interno_mm": [
+    51.4,
+    26.7,
+    14.0
+  ],
+  "externo_mm": [
+    55.0,
+    44.3,
+    17.2
+  ],
+  "base": {
+    "volume_cm3": 7.683,
+    "estanque": true,
+    "faces": 1276
+  },
+  "tampa": {
+    "volume_cm3": 2.449,
+    "estanque": true,
+    "faces": 164
+  },
+  "massa_estimada_g_100pct_preenchimento": 12.9
+}

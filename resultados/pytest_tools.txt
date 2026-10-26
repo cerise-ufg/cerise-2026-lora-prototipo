@@ -1,0 +1,29 @@
+============================= test session starts =============================
+platform win32 -- Python 3.11.9, pytest-9.1.1, pluggy-1.7.0 -- E:\CERISE\tools\venv_lora\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: E:\CERISE\FRENTES\NAVEGACAO AUTONOMA\LORA\tools
+collecting ... collected 21 items
+
+tests/test_dashboard.py::test_pdr_with_gaps_dups_and_wraparound PASSED   [  4%]
+tests/test_dashboard.py::test_reordering_does_not_inflate_expected PASSED [  9%]
+tests/test_dashboard.py::test_socket_stream_end_to_end PASSED            [ 14%]
+tests/test_proto_py.py::test_vector_counts PASSED                        [ 19%]
+tests/test_proto_py.py::test_encode_matches_c PASSED                     [ 23%]
+tests/test_proto_py.py::test_decode_matches_c PASSED                     [ 28%]
+tests/test_proto_py.py::test_json_matches_c PASSED                       [ 33%]
+tests/test_proto_py.py::test_corruption_codes_match_c PASSED             [ 38%]
+tests/test_proto_py.py::test_airtime_matches_c_and_float_formula PASSED  [ 42%]
+tests/test_proto_py.py::test_frame_lengths[1-18] PASSED                  [ 47%]
+tests/test_proto_py.py::test_frame_lengths[2-24] PASSED                  [ 52%]
+tests/test_proto_py.py::test_frame_lengths[3-32] PASSED                  [ 57%]
+tests/test_proto_py.py::test_frame_lengths[4-17] PASSED                  [ 61%]
+tests/test_proto_py.py::test_frame_lengths[5-23] PASSED                  [ 66%]
+tests/test_proto_py.py::test_frame_lengths[6-16] PASSED                  [ 71%]
+tests/test_proto_py.py::test_frame_lengths[7-14] PASSED                  [ 76%]
+tests/test_proto_py.py::test_frame_lengths[8-14] PASSED                  [ 80%]
+tests/test_proto_py.py::test_frame_lengths[9-13] PASSED                  [ 85%]
+tests/test_proto_py.py::test_types_seen_in_vectors PASSED                [ 90%]
+tests/test_proto_py.py::test_compat_with_drones_front PASSED             [ 95%]
+tests/test_proto_py.py::test_crc_check_value PASSED                      [100%]
+
+============================= 21 passed in 3.80s ==============================

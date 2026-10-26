@@ -1,0 +1,16 @@
+{"seeds": 5, "dur_s": 1800.0, "period_s": 5.0, "jitter": 0.1, "retries": 3, "up_frame_B": 24, "ack_frame_B": 16, "bw_hz": 125000, "cr": "4/5", "runs": 1130}
+SF9 N= 5 aloha      PDR=0.714 lat_med=206 ms p95=206 ms colis/h=1027 ocup=20.6%
+SF9 N=10 aloha      PDR=0.460 lat_med=206 ms p95=206 ms colis/h=3886 ocup=41.2%
+SF9 N=20 aloha      PDR=0.192 lat_med=206 ms p95=206 ms colis/h=11626 ocup=82.3%
+SF9 N= 5 aloha_ack  PDR=0.676 lat_med=2790 ms p95=7317 ms colis/h=7963 ocup=75.2%
+SF9 N=10 aloha_ack  PDR=0.151 lat_med=4356 ms p95=9093 ms colis/h=23271 ocup=145.0%
+SF9 N=20 aloha_ack  PDR=0.007 lat_med=4342 ms p95=8730 ms colis/h=48809 ocup=280.1%
+SF9 N= 5 csma_ack   PDR=1.000 lat_med=417 ms p95=1327 ms colis/h=270 ocup=39.5%
+SF9 N=10 csma_ack   PDR=0.626 lat_med=4096 ms p95=10249 ms colis/h=11182 ocup=119.6%
+SF9 N=20 csma_ack   PDR=0.112 lat_med=6579 ms p95=13102 ms colis/h=28596 ocup=181.5%
+SF9 N= 5 slotted    PDR=0.837 lat_med=314 ms p95=411 ms colis/h=583 ocup=20.6%
+SF9 N=10 slotted    PDR=0.672 lat_med=313 ms p95=410 ms colis/h=2362 ocup=41.2%
+SF9 N=20 slotted    PDR=0.437 lat_med=314 ms p95=411 ms colis/h=8104 ocup=82.3%
+SF9 N= 5 tdma_ack   PDR=1.000 lat_med=1214 ms p95=2108 ms colis/h=0 ocup=37.1%
+SF9 N=10 tdma_ack   PDR=1.000 lat_med=2214 ms p95=4011 ms colis/h=0 ocup=74.1%
+SF9 N=20 tdma_ack   PDR=0.626 lat_med=10305 ms p95=12630 ms colis/h=0 ocup=93.1%
