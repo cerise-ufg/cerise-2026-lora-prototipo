@@ -250,9 +250,10 @@ potência média de voo de um multirrotor de ~200 W. Esses valores devem ser sub
 
 ## 6. Repositório
 
-Código, testes, ferramentas, figuras e resultados: <https://github.com/EduardoCaixeta/cerise-2026-lora-prototipo>
-(privado). Os arquivos de métricas citados neste texto estão em `resultados/` (CSV/JSON/logs) e as figuras em
-`evidencias/`.
+Código, testes, ferramentas, figuras e resultados: repositório `cerise-2026-lora-prototipo` da organização do
+CERISE no GitHub. Os arquivos de métricas citados neste texto estão em `resultados/` (CSV/JSON/logs) e as figuras em
+`evidencias/`; os binários compilados estão em `firmware/binarios/` e os arquivos de depuração da compilação
+(ELF/MAP), no Release descrito em `RELEASES.md`.
 
 ## 7. Limitações
 
