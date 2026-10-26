@@ -13,8 +13,8 @@ Os `.bin` graváveis (bootloader, tabela de partições e aplicação) também e
 ## Como baixar e verificar
 
 ```powershell
-# com o GitHub CLI (substitua <org> pela organização do repositório)
-gh release download v1.0-prototipo -R <org>/cerise-2026-lora-prototipo -p "lora-firmware-v1-elf-map.zip"
+# com o GitHub CLI (substitua cerise-ufg pela organização do repositório)
+gh release download v1.0-prototipo -R cerise-ufg/cerise-2026-lora-prototipo -p "lora-firmware-v1-elf-map.zip"
 
 # conferir a integridade
 (Get-FileHash .\lora-firmware-v1-elf-map.zip -Algorithm SHA256).Hash.ToLower()
