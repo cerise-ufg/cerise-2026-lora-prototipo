@@ -40,7 +40,7 @@ Conferências de bancada (antes do campo, placas a ~2 m, potência reduzida `POW
 | Distância (visada direta, solo plano) | 50, 100, 200, 500, 1000, 2000, 3000 m e o máximo alcançável |
 | SF | 7, 9, 10 (SF11/12 apenas como referência de sensibilidade, com `DWELL 0`: excedem 400 ms) |
 | Potência | 14 dBm (padrão); 20 dBm só no ponto de maior distância |
-| Quadro | POS (24 B) — padrão; repetir no ponto mais distante com AREA_ASSIGN (32 B) via `ASSIGN` |
+| Quadro | POS (24 B) — padrão; repetir no ponto mais distante com AREA_ASSIGN (32 B) via `ASSIGN`, só com SF ≤ 9 (452,6 ms em SF10; o gateway não aplica o limite de 400 ms aos downlinks) |
 | Altura do nó | 1,5 m (tripé) e, quando autorizado, drone pairando a 30 / 60 / 100 m AGL |
 | Repetições | 200 quadros por ponto (intervalo 1 s) |
 

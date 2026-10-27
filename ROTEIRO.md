@@ -244,7 +244,7 @@ O procedimento completo está em `hardware/protocolo_teste_alcance.md`. Faça pr
 | Distância (visada direta) | 50, 100, 200, 500, 1000, 2000 e 3000 m e o máximo alcançável |
 | SF | 7, 9 e 10 (SF11 e SF12 só como referência, com `DWELL 0`) |
 | Potência | 14 dBm; 20 dBm só no ponto mais distante |
-| Quadro | POS (24 B); no ponto mais distante, também AREA_ASSIGN (32 B) |
+| Quadro | POS (24 B); no ponto mais distante, também AREA_ASSIGN (32 B), só com SF ≤ 9 |
 | Altura do nó | 1,5 m em tripé; com autorização, drone a 30, 60 e 100 m |
 | Repetições | 200 quadros por ponto, a cada 1 s |
 
@@ -262,11 +262,11 @@ python tools/gateway_dashboard.py --port COM6 --label "d500_sf9_h1.5" --out resu
 
 4. Após `{"evt":"rangetest_end",...}`, encerre o dashboard com Ctrl+C; o `resumo.json` traz PDR, RSSI e SNR médios e mínimos.
 
-5. Repita por 5 min com a telemetria normal, com ACK, para medir a PDR após retentativas e a latência (`lat_ms` nos eventos `ack`).
+5. Repita por 5 min com a telemetria normal, com ACK, para medir a PDR após retentativas e a latência (`lat_ms` nos eventos `ack`); em SF11 e SF12, use só o `RANGETEST`, pois o ACK do gateway também passa de 400 ms (659,5 ms em SF11). No ponto mais distante, repita com o AREA_ASSIGN (`ASSIGN` no gateway), só com SF ≤ 9.
 
 6. Registre clima, obstáculos, orientação das antenas e altura na planilha da seção 7 do protocolo; para o consumo, siga a seção 6.
 
-Regulamentação: o rádio opera em 915–928 MHz (Resolução ANATEL nº 680/2017, Ato nº 14.448/2017), plano AU915, canal 8, com no máximo 400 ms no ar por quadro: o POS cabe até SF10 (370,7 ms) e o AREA_ASSIGN até SF9 (246,8 ms). Use até 1 W e antenas de até 6 dBi, só em ensaios curtos; a operação definitiva exige salto de frequência e homologação. Voe só com drone cadastrado, em linha de visada, até 120 m (RBAC-E nº 94 e ICA 100-40).
+Regulamentação: o rádio opera em 915–928 MHz (Resolução ANATEL nº 680/2017, Ato nº 14.448/2017), plano AU915, canal 8, com no máximo 400 ms no ar por quadro: o POS cabe até SF10 (370,7 ms) e o AREA_ASSIGN até SF9 (246,8 ms). Só o nó aplica esse limite (evento `dwell_block`); o gateway não confere o tempo no ar dos *downlinks* (ACK e AREA_ASSIGN), por isso nunca envie `ASSIGN` com SF 10 ou maior. Use até 1 W e antenas de até 6 dBi, só em ensaios curtos; a operação definitiva exige salto de frequência e homologação. Voe só com drone cadastrado, em linha de visada, até 120 m (RBAC-E nº 94 e ICA 100-40).
 
 ## Verificação do resultado
 
@@ -297,7 +297,7 @@ Para o ensaio físico não há valores medidos: compare com `resultados/enlace_a
 - **Dashboard simulado sem linhas:** inicie antes o `sim_serial_gateway.py`; ele aceita uma única conexão e termina ao fim da duração.
 - **Porta serial ocupada:** monitor e dashboard não abrem a mesma porta ao mesmo tempo.
 - **SF ou potência voltam ao padrão:** `SF` e `POWER` não são persistentes; se a linha `boot` reaparecer, reenvie-os nas duas placas ou altere `-DLORA_SF` e regrave.
-- **Quadro bloqueado pelo limite de 400 ms:** o evento `dwell_block` é esperado em SF11 e SF12 e para AREA_ASSIGN em SF10 (452,6 ms).
+- **Quadro bloqueado pelo limite de 400 ms:** o `dwell_block` só existe no nó e é esperado para o POS e os demais *uplinks* em SF11 e SF12. O gateway não bloqueia *downlinks*: não envie `ASSIGN` com SF 10 ou maior, pois o AREA_ASSIGN ocupa 452,6 ms em SF10.
 - **OLED com "ERRO no radio":** o ambiente gravado não corresponde à placa (Heltec V3 com SX1262, TTGO com SX1276).
 - **Tensão de bateria errada na Heltec V3.2:** `firmware/src/common/board.h` usa `VBAT_CTRL_ACTIVE LOW` (V3.0 e V3.1); na V3.2 é HIGH.
 - **Ativação do Python bloqueada no PowerShell:** chame `.\.venv\Scripts\python.exe` diretamente, sem alterar a política de execução.
